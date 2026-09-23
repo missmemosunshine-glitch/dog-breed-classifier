@@ -1,6 +1,7 @@
 # Dog Breed Classifier 🐶
 
 A computer vision project that uses pretrained Convolutional Neural Network (CNN) models to identify dogs in images and predict their breed.
+![VGG classifier results](vgg-classifier-results.png)
 
 ## 📌 Project Overview
 
