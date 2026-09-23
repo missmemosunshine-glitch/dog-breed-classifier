@@ -53,3 +53,28 @@ dog-breed-classifier/
 │
 ├── .gitignore
 └── README.md
+```
+
+├── .gitignore
+└── README.md
+```
+
+## 🧪 Example Test & Results
+
+A small test was performed using three uploaded images with the VGG model:
+
+| Metric | Result |
+|---|---:|
+| Model | VGG |
+| Images tested | 3 |
+| Dog images | 1 |
+| Non-dog images | 2 |
+| Overall exact match | 66.7% |
+| Correct dog detection | 100% |
+| Correct non-dog detection | 100% |
+| Correct breed prediction | 0% |
+| Runtime | 14 seconds |
+
+The classifier correctly identified the dog and non-dog images in this small sample. The dog image was identified as a dog, but the predicted breed was **bull mastiff** rather than the expected label.
+
+> **Note:** This is a very small test sample and should not be interpreted as the overall accuracy of the model.
