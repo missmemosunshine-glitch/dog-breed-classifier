@@ -1,0 +1,61 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 3 key-value pairs.
+Below are 3 of them:
+ 1 key:                     Cat_01.jpg  label:                        cat
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:              Coffee_mug_01.jpg  label:                 coffee mug
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:               persian cat, cat
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                   bull mastiff
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
+
+     MATCH:
+
+                    Cat_01.jpg: 
+Real:                        cat   Classifier:               persian cat, cat  
+PetLabelDog: 0  ClassLabelDog: 0
+
+             Coffee_mug_01.jpg: 
+Real:                 coffee mug   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                   bull mastiff  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 3 # Matches: 2 # NOT Matches: 1
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  3  N Dog Images:  1  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+Results with CNN Model Architecture:resnet
+Number of Images: 3
+Number of Dog Images: 1
+Number of Not -a-Dog Images: 2
+Percent Match: 66.66666666666666
+Percent of Correct Dogs: 100.0
+Percent of Correct Breed 0.0
+Percent of Correct Not-a-Dog  100.0
+
+** Total Elapsed Runtime: 0:0:5
