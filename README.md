@@ -55,9 +55,6 @@ dog-breed-classifier/
 └── README.md
 ```
 
-├── .gitignore
-└── README.md
-```
 
 ## 🧪 Example Test & Results
 
